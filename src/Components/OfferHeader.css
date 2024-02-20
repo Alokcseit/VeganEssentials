@@ -1,0 +1,23 @@
+.scrollText {
+  animation: scrollText 30s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation-duration: 60s;
+  z-index: 0;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .scrollText {
+    font-size: 14px; /* Adjust font size for better readability on smaller screens */
+  }
+}
